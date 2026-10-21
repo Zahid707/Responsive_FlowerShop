@@ -48,6 +48,13 @@ body{
 .text-org{
     color: #E95A08;
 }
+.btn{
+    background-color: #E95A08;
+    color: white;
+    border: none;
+    width: 270px;
+    height: 50px;
+}
 /*Header*/
 /*nav*/
 .nav-bar{
@@ -65,12 +72,12 @@ body{
 
 .cart-logo{
     align-items: center;
-    gap: 5px;
-    filter: brightness(0);
+    gap: 5px;   
 }
 .cart-logo img{
     height: 24px;
     width: 24px;
+    filter: brightness(0);
 }
 /*banner*/
 .banner{
@@ -80,16 +87,100 @@ body{
 .banner-title{
     font-size: 65px;
     font-weight: 800;
-    margin-bottom: 0%;
+    margin-bottom: 0;
 }
 .banner-text{
     color: #8987A1;
     font-weight: 400;
     font-size: x-large;
 }
-banner img{
+/* banner img{
     height: 570px;
     font-weight: 355px;
-}
+} */
 /*Main Styles*/
+/*plants-section*/
+.plants-section{
+    margin-top: 120px;
+    text-align: center;
+    
+   
+}
+.image-container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.plants-section-title{
+    font-size: 50px;
+    font-weight: bold;
+}
+.plants-section-para{
+    width: 888px;
+    font-size: 22px;
+    margin: 0 auto;
+}
+
 /*Footer Styles*/
+/*responsive*/
+@media screen and (max-width: 576px) {
+
+    .nav-bar {
+        margin-top: 0;
+        padding: 15px;
+    }
+
+    .nav-bar > img {
+        width: 100px;
+    }
+
+    .nav-items-box {
+        gap: 0;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    .cart-logo {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        white-space: nowrap;
+    }
+
+    .cart-logo img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    /* Banner */
+    .banner {
+        flex-direction: column-reverse;
+        margin-top: 20px;
+        gap: 0;
+        align-items: stretch;
+    }
+
+    .banner img {
+        width: 100%;
+        height: auto;
+    }
+
+    .banner-content {
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    .banner-title {
+        font-size: 32px;
+        line-height: 1.2;
+        margin-top: 25px;
+    }
+
+    .banner-text {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
