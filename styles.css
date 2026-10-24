@@ -138,6 +138,35 @@ body{
     font-weight: 700;
     margin-top: 0;
 }
+/*plants-lover-section*/
+.plants-lover-section{
+    margin-top: 210px ;
+}
+.badge{
+    width: 286px;
+    height: 286px;
+    margin-left: -170px;
+    margin-top: -150px;
+}
+.pl-words{
+    margin-left: -70px;
+    margin-top: 32px;
+}
+.pl-title{
+    font-weight: bold;
+    font-size: 50px;
+}
+.pl-para{
+    
+}
+.pl-para ul {
+    padding-left: 20px;
+}
+.pl-para li {
+    font-weight: 500;
+    font-size: 23.5px;
+    margin-bottom: 20px;
+}
 
 /*Footer Styles*/
 /*responsive*/
